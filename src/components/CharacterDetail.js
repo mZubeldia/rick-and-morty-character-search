@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 
 const CharacterDetail = (props) => {
+  const humanIcon = <i className="fas fa-universal-access species-icon"></i>;
+  const alienIcon = <i className="fab fa-reddit-alien species-icon"></i>;
+
+  const speciesIcon = () => {
+    if (props.character.species === "Alien") {
+      return alienIcon;
+    } else if (props.character.species === "Human") {
+      return humanIcon;
+    }
+  };
   return (
     <main className="card-detail-container">
       <Link className="return-link" to="/">
@@ -18,7 +28,7 @@ const CharacterDetail = (props) => {
               {props.character.status}
             </li>
             <li className="list-detail__item">
-              Species: {props.character.species}
+              Species: {props.character.species} {speciesIcon()}
             </li>
             <li className="list-detail__item">
               Origin: {props.character.origin}
