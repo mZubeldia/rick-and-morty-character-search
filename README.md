@@ -1,6 +1,6 @@
-# Evaluación final Módulo React Adalab
+# Buscador de personajes Rick & Morty
 
-¡Hola! 👋, esta es mi evaluación final del módulo 3 de Adalab.
+¡Hola! 👋, bienvenida a este repositorio.
 
 🚩 El ejercicio consiste en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje. Vamos a usar React para realizarlo.
 
