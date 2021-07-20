@@ -10,7 +10,7 @@ import Header from "./Header";
 import Filters from "./Filters";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
-import CharacterNotFound from "./CharacterNotFound";
+import RouteNotFound from "./RouteNotFound";
 import Footer from "./Footer";
 
 //servicios
@@ -89,7 +89,7 @@ const App = () => {
       //si no lo encuentra en el array
       return <CharacterDetail character={foundCharacter} />;
     } else {
-      return <CharacterNotFound />;
+      return <RouteNotFound />;
     }
   };
 
@@ -109,7 +109,7 @@ const App = () => {
           </main>
         </Route>
         <Route path="/character/:characterId" render={renderCharacterDetail} />
-        <Route path="*" component={CharacterNotFound} />
+        <Route path="*" component={RouteNotFound} />
       </Switch>
       <Footer />
     </>

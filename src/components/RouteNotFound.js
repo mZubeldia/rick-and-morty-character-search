@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CharacterNotFound = () => {
+const RouteNotFound = () => {
   return (
     <>
       <main className="not-found-main">
@@ -9,11 +9,11 @@ const CharacterNotFound = () => {
           Try again
         </Link>
         <h2 className="not-found-text">
-          The character you are looking for is not in this dimension...
+          Oups... Something didn't go as expected...
         </h2>
       </main>
     </>
   );
 };
 
-export default CharacterNotFound;
+export default RouteNotFound;
