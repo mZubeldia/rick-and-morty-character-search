@@ -9,7 +9,12 @@ const FilterBySpecies = (props) => {
 
   return (
     <>
-      <select name="species" id="species" onChange={handleSpecies}>
+      <select
+        className="form__input species"
+        name="species"
+        id="species"
+        onChange={handleSpecies}
+      >
         <option value="">Select species</option>
         <option value="alien">Alien</option>
         <option value="human">Human</option>
