@@ -12,7 +12,11 @@ const CharacterList = (props) => {
       );
     });
   } else {
-    characterElement = <h2>Character not found</h2>;
+    characterElement = (
+      <>
+        <h2>Character not found</h2>
+      </>
+    );
   }
   return (
     <section className="results-section">

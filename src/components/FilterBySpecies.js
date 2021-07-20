@@ -8,15 +8,13 @@ const FilterBySpecies = (props) => {
   };
 
   return (
-    <input
-      className="form__input species"
-      type="text"
-      name="species"
-      id="species"
-      value={props.filterSpecies}
-      placeholder="Species"
-      onChange={handleSpecies}
-    />
+    <>
+      <select name="species" id="species" onChange={handleSpecies}>
+        <option value="">Select species</option>
+        <option value="alien">Alien</option>
+        <option value="human">Human</option>
+      </select>
+    </>
   );
 };
 

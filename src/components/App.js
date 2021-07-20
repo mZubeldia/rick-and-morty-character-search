@@ -72,9 +72,11 @@ const App = () => {
       return character.name.toLowerCase().includes(filterName.toLowerCase());
     })
     .filter((character) => {
-      return character.species
-        .toLowerCase()
-        .includes(filterSpecies.toLowerCase());
+      if (filterSpecies === "") {
+        return true;
+      } else {
+        return character.species.toLowerCase() === filterSpecies;
+      }
     });
 
   const renderCharacterDetail = (props) => {
@@ -109,6 +111,7 @@ const App = () => {
           </main>
         </Route>
         <Route path="/character/:characterId" render={renderCharacterDetail} />
+
         <Route path="*" component={RouteNotFound} />
       </Switch>
       <Footer />
