@@ -85,7 +85,6 @@ const App = () => {
     const foundCharacter = characters.find((character) => {
       return character.id === parseInt(routerCharacterId);
     }); //parseInt(routerCharacterId)
-    console.log("router props", routerCharacterId, foundCharacter);
 
     if (foundCharacter !== undefined) {
       //si no lo encuentra en el array

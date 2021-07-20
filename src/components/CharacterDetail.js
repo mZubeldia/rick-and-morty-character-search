@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const CharacterDetail = (props) => {
   const humanIcon = <i className="fas fa-universal-access species-icon"></i>;
   const alienIcon = <i className="fab fa-reddit-alien species-icon"></i>;
-  const deadIcon = <i class="fas fa-skull status-icon"></i>;
-  const aliveIcon = <i class="fas fa-smile status-icon"></i>;
-  const missingIcon = <i class="fas fa-compass status-icon"></i>;
+  const deadIcon = <i className="fas fa-skull status-icon"></i>;
+  const aliveIcon = <i className="fas fa-smile status-icon"></i>;
+  const missingIcon = <i className="fas fa-compass status-icon"></i>;
 
   const speciesIcon = () => {
     if (props.character.species === "Alien") {
